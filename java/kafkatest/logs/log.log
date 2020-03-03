@@ -1,0 +1,419 @@
+2020-02-20 16:58:59  [ main:0 ] - [ INFO ]  StreamsConfig values: 
+	application.id = fa_apply_info_ext
+	application.server = 
+	bootstrap.servers = [hdp-t4:9091]
+	buffered.records.per.partition = 1000
+	cache.max.bytes.buffering = 0
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	max.task.idle.ms = 0
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+	poll.ms = 100
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = 1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	topology.optimization = none
+	upgrade.from = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2020-02-20 16:58:59  [ main:528 ] - [ INFO ]  AdminClientConfig values: 
+	bootstrap.servers = [hdp-t4:9091]
+	client.dns.lookup = default
+	client.id = fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-admin
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2020-02-20 16:58:59  [ main:604 ] - [ INFO ]  Kafka version: 2.3.0
+2020-02-20 16:58:59  [ main:605 ] - [ INFO ]  Kafka commitId: fc1aaa116b661c8a
+2020-02-20 16:58:59  [ main:605 ] - [ INFO ]  Kafka startTimeMs: 1582189139971
+2020-02-20 16:58:59  [ main:607 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] Creating restore consumer client
+2020-02-20 16:58:59  [ main:617 ] - [ INFO ]  ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [hdp-t4:9091]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2020-02-20 16:59:00  [ main:652 ] - [ INFO ]  Kafka version: 2.3.0
+2020-02-20 16:59:00  [ main:652 ] - [ INFO ]  Kafka commitId: fc1aaa116b661c8a
+2020-02-20 16:59:00  [ main:652 ] - [ INFO ]  Kafka startTimeMs: 1582189140023
+2020-02-20 16:59:00  [ main:656 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] Creating shared producer client
+2020-02-20 16:59:00  [ main:663 ] - [ INFO ]  ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [hdp-t4:9091]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2020-02-20 16:59:00  [ main:689 ] - [ INFO ]  Kafka version: 2.3.0
+2020-02-20 16:59:00  [ main:689 ] - [ INFO ]  Kafka commitId: fc1aaa116b661c8a
+2020-02-20 16:59:00  [ main:689 ] - [ INFO ]  Kafka startTimeMs: 1582189140059
+2020-02-20 16:59:00  [ main:695 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] Creating consumer client
+2020-02-20 16:59:00  [ main:698 ] - [ INFO ]  ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [hdp-t4:9091]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = fa_apply_info_ext
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2020-02-20 16:59:00  [ main:718 ] - [ WARN ]  The configuration 'admin.retries' was supplied but isn't a known config.
+2020-02-20 16:59:00  [ main:718 ] - [ WARN ]  The configuration 'admin.retry.backoff.ms' was supplied but isn't a known config.
+2020-02-20 16:59:00  [ main:718 ] - [ INFO ]  Kafka version: 2.3.0
+2020-02-20 16:59:00  [ main:718 ] - [ INFO ]  Kafka commitId: fc1aaa116b661c8a
+2020-02-20 16:59:00  [ main:718 ] - [ INFO ]  Kafka startTimeMs: 1582189140089
+2020-02-20 16:59:00  [ main:724 ] - [ INFO ]  stream-client [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8] State transition from CREATED to REBALANCING
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:727 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] Starting
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:727 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] State transition from CREATED to STARTING
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:728 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Subscribed to pattern: 'yx_mysql_lloan'
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:907 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Discovered group coordinator hdp-t4:9091 (id: 2147483646 rack: null)
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:909 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Revoking previously assigned partitions []
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:910 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] State transition from STARTING to PARTITIONS_REVOKED
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:910 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:910 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] partition revocation took 0 ms.
+	suspended active tasks: []
+	suspended standby tasks: []
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:910 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] (Re-)joining group
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1459 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer] Assigned tasks to clients as {0e6dafec-5152-483a-98f8-e3427b1e98a8=[activeTasks: ([0_0]) standbyTasks: ([]) assignedTasks: ([0_0]) prevActiveTasks: ([]) prevStandbyTasks: ([]) prevAssignedTasks: ([]) capacity: 1]}.
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1500 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Successfully joined group with generation 1
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1503 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Setting newly assigned partitions: yx_mysql_lloan-0
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1503 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] State transition from PARTITIONS_REVOKED to PARTITIONS_ASSIGNED
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1517 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] partition assignment took 14 ms.
+	current active tasks: [0_0]
+	current standby tasks: []
+	previous active tasks: []
+
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1542 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1542 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1542 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1543 ] - [ INFO ]  stream-client [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8] State transition from REBALANCING to RUNNING
+2020-02-20 16:59:01  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1727 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Setting offset for partition yx_mysql_lloan-0 to the committed offset FetchPosition{offset=18, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=hdp-t4:9091 (id: 1 rack: null), epoch=-1}}
+2020-02-20 17:00:57  [ main:0 ] - [ INFO ]  ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.145.132:9091]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-02-20 17:00:57  [ main:631 ] - [ INFO ]  Kafka version: 2.3.0
+2020-02-20 17:00:57  [ main:631 ] - [ INFO ]  Kafka commitId: fc1aaa116b661c8a
+2020-02-20 17:00:57  [ main:633 ] - [ INFO ]  Kafka startTimeMs: 1582189257900
+2020-02-20 17:00:57  [ main:636 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Subscribed to topic(s): fa_apply_info_ext_hubg
+2020-02-20 17:00:58  [ main:993 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Discovered group coordinator hdp-t4:9091 (id: 2147483646 rack: null)
+2020-02-20 17:00:58  [ main:1008 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2020-02-20 17:00:58  [ main:1008 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2020-02-20 17:00:59  [ main:2059 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 22
+2020-02-20 17:00:59  [ main:2065 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions: fa_apply_info_ext_hubg-0
+2020-02-20 17:00:59  [ main:2115 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Setting offset for partition fa_apply_info_ext_hubg-0 to the committed offset FetchPosition{offset=38, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=hdp-t4:9091 (id: 1 rack: null), epoch=-1}}
