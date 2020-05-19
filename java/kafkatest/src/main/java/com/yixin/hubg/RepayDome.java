@@ -21,11 +21,11 @@ import java.util.concurrent.CountDownLatch;
  */
 public class RepayDome {
     public static final String INPUT_TOPIC = "lloantest1";
-    public static final String OUTPUT_TOPIC = "repay_dome_hubg";
+    public static final String OUTPUT_TOPIC = "repay_dome_hubg2";
 
     static Properties getStreamsConfig() {
         final Properties props = new Properties();
-        props.put(StreamsConfig.APPLICATION_ID_CONFIG, "RepayDome"); //groupId
+        props.put(StreamsConfig.APPLICATION_ID_CONFIG, "RepayDome2"); //groupId
         //10.0.4.43:9091,10.0.4.44:9091,10.0.4.45:9091
         props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "10.0.4.43:9091,10.0.4.44:9091,10.0.4.45:9091");
         props.put(StreamsConfig.CACHE_MAX_BYTES_BUFFERING_CONFIG, 0);
@@ -33,7 +33,7 @@ public class RepayDome {
         props.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass().getName());
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");  //latest  earliest
         props.put(StreamsConfig.DEFAULT_TIMESTAMP_EXTRACTOR_CLASS_CONFIG, TimestampExtractorImpl.class.getName());
-        System.out.println(TimestampExtractorImpl.class.getName());
+//        System.out.println(TimestampExtractorImpl.class.getName());
         return props;
     }
 
@@ -73,16 +73,22 @@ public class RepayDome {
                             @Override
                             public String apply(String aggKey, String newValue, String aggValue) {
 //                                System.out.println("aggKey:" + aggKey + ",  newValue:" + newValue + ", aggKey:" + aggValue);
-                                RepayPlanCustSource oin = JSON.parseObject(newValue, new TypeReference<RepayPlanCustSource>() {
+                                RepayPlanCustSource oin = JSON.parseObject(newValue
+                                        , new TypeReference<RepayPlanCustSource>() {
                                 });
                                 Map<String, RepayPlanCustTemp> res = JSON.parseObject(aggValue
                                         , new TypeReference<Map<String, RepayPlanCustTemp>>() {
                                         });
-                                RepayPlanCustTemp tmp = getTempFromSource(oin);
-                                if (tmp.getIS_DELETED().equals("1")) {
-                                    res.remove(tmp.getCurrent_repay_period());
+                                if (res.containsKey(oin.getCurrent_repay_period())
+                                        && oin.getTs() <= res.get(oin.getCurrent_repay_period()).getTs()) {
+                                    return aggValue;
                                 } else {
-                                    res.put(tmp.getCurrent_repay_period(), tmp);
+                                    RepayPlanCustTemp tmp = getTempFromSource(oin);
+                                    if (tmp.getIS_DELETED().equals("1")) {
+                                        res.remove(tmp.getCurrent_repay_period());
+                                    } else {
+                                        res.put(tmp.getCurrent_repay_period(), tmp);
+                                    }
                                 }
                                 return JSON.toJSONString(res);
                             }
@@ -95,14 +101,13 @@ public class RepayDome {
 //        outString.map((k, v) -> {
 //            return new KeyValue<String, String>(k, v.toString());
 //        }).print(Printed.<String, String>toSysOut().withLabel("Stocks-KTable"));
-        outString.map((k, v) -> {
-            return new KeyValue<String, String>(k, JSON.toJSONString(v));
-        }).to(OUTPUT_TOPIC, Produced.with(Serdes.String(), Serdes.String()));
+        outString.to(OUTPUT_TOPIC, Produced.with(Serdes.String(), Serdes.String()));
     }
 
     private static RepayPlanCustTemp getTempFromSource(RepayPlanCustSource f) {
         RepayPlanCustTemp o = new RepayPlanCustTemp();
         o.setDbDMLType(f.getType());
+        o.setTs(f.getTs());
         if (f.getApply_no() != null) {
             o.setApply_no(f.getApply_no());
         }
@@ -115,6 +120,8 @@ public class RepayDome {
                         + "-" + f.getPlan_repay_date().substring(4, 6)
                         + "-" + f.getPlan_repay_date().substring(6, 8);
                 o.setPlan_repay_date(planRepay_date);
+            } else if (f.getPlan_repay_date().length() >= 10) {
+                o.setPlan_repay_date(f.getPlan_repay_date().substring(0, 10));
             } else {
                 o.setPlan_repay_date(f.getPlan_repay_date());
             }

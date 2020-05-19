@@ -1,5 +1,6 @@
 package com.yixin.hubg.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.apache.kafka.common.serialization.Deserializer;
 import org.apache.kafka.common.serialization.Serde;
@@ -12,6 +13,7 @@ import java.util.List;
  * Create By 鸣宇淳 on 2020/2/10
  **/
 @Data
+@AllArgsConstructor
 public class KafkaData<T> implements Serializable {
     private String id;
     private String type;

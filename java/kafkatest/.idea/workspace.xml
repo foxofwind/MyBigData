@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3af89fed-ec12-4296-a8b4-474cb5eb43c6" name="Default Changelist" comment="" />
+    <list default="true" id="3af89fed-ec12-4296-a8b4-474cb5eb43c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/FirstChk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/KtableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/OutMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/RepayDome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/RepayDomeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/RepayOutMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/RepayTempMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/TemperatureAvgDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/TemperatureDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/TimestampExtractorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/KafkaEntiesBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/OrderIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/OrderInDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/OrderInSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/OrderOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/OrderOutDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/OrderOutSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/RepayPlanCustOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/RepayPlanCustSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/RepayPlanCustTemp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/Statistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/StatisticsDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/StatisticsSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/util/DateTimeHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/daihou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/daihou/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/daihou/daihou.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/daihou/daihou.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/ProducerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/ProducerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/WordCountApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/WordCountApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/FaApplyInfoExtSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/FaApplyInfoExtSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/KafkaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixin/hubg/domain/KafkaData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maventest/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../maventest/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maventest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../maventest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maventest/maventest.iml" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +58,10 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -29,23 +73,32 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1XvK4svNHxJA6K9PW2VvnTxOr7Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/py_tools/py_tools/att-export-project" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="D:/mycodes/github/flink-1.10" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.42873564" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\工作\workcode\java\kafkatest\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.yixin.hubg" />
+      <recent name="org.apache.kafka.streams.processor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mygit\java\kafkatest\src\main\java\com\yixin\hubg\domain" />
+      <recent name="D:\工作\workcode\java\kafkatest\src\main\java\com\yixin\hubg" />
+      <recent name="D:\工作\workcode\java\kafkatest\src\main\java\com\yixin\hubg\util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.yixin.hubg" />
+      <recent name="com.yixin.hubg.util" />
+      <recent name="com.yixin.hubg.domain" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\工作\workcode\java\kafkatest\src\main\java\com\yixin\hubg" />
-      <recent name="D:\工作\workcode\java\kafkatest\src\main\java\com\yixin\hubg\util" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\工作\workcode\java\kafkatest\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -65,49 +118,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConsumerDemo">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yixin.hubg.App" />
-      <module name="kafkatest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yixin.hubg.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yixin.hubg.App2" />
-      <module name="kafkatest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yixin.hubg.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yixin.hubg.ConsumerDemo" />
-      <module name="kafkatest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yixin.hubg.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TemperatureDemo">
     <configuration name="ProducerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.yixin.hubg.ProducerDemo" />
-      <module name="kafkatest" />
+      <module name="kafka-test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yixin.hubg.*" />
@@ -118,9 +134,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCountDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yixin.hubg.WordCountDemo" />
-      <module name="kafkatest" />
+    <configuration name="RepayDome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yixin.hubg.RepayDome" />
+      <module name="kafka-test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yixin.hubg.*" />
@@ -131,13 +147,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RepayDomeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yixin.hubg.RepayDomeTest" />
+      <module name="kafka-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yixin.hubg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemperatureDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yixin.hubg.TemperatureDemo" />
+      <module name="kafka-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yixin.hubg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCountApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yixin.hubg.WordCountApplication" />
+      <module name="kafka-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yixin.hubg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ProducerDemo" />
+      <item itemvalue="Application.RepayDome" />
+      <item itemvalue="Application.RepayDomeTest" />
+      <item itemvalue="Application.WordCountApplication" />
+      <item itemvalue="Application.TemperatureDemo" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConsumerDemo" />
-        <item itemvalue="Application.App2" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.TemperatureDemo" />
+        <item itemvalue="Application.WordCountApplication" />
         <item itemvalue="Application.ProducerDemo" />
-        <item itemvalue="Application.WordCountDemo" />
+        <item itemvalue="Application.RepayDomeTest" />
+        <item itemvalue="Application.RepayDome" />
       </list>
     </recent_temporary>
   </component>
@@ -153,5 +215,18 @@
       <updated>1581920940091</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

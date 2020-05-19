@@ -1,419 +1,278 @@
-2020-02-20 16:58:59  [ main:0 ] - [ INFO ]  StreamsConfig values: 
-	application.id = fa_apply_info_ext
-	application.server = 
-	bootstrap.servers = [hdp-t4:9091]
-	buffered.records.per.partition = 1000
-	cache.max.bytes.buffering = 0
-	client.id = 
-	commit.interval.ms = 30000
-	connections.max.idle.ms = 540000
-	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
-	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
-	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
-	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
-	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
-	max.task.idle.ms = 0
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	num.standby.replicas = 0
-	num.stream.threads = 1
-	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
-	poll.ms = 100
-	processing.guarantee = at_least_once
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	replication.factor = 1
-	request.timeout.ms = 40000
-	retries = 0
-	retry.backoff.ms = 100
-	rocksdb.config.setter = null
-	security.protocol = PLAINTEXT
-	send.buffer.bytes = 131072
-	state.cleanup.delay.ms = 600000
-	state.dir = /tmp/kafka-streams
-	topology.optimization = none
-	upgrade.from = null
-	windowstore.changelog.additional.retention.ms = 86400000
-
-2020-02-20 16:58:59  [ main:528 ] - [ INFO ]  AdminClientConfig values: 
-	bootstrap.servers = [hdp-t4:9091]
-	client.dns.lookup = default
-	client.id = fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-admin
-	connections.max.idle.ms = 300000
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 120000
-	retries = 5
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	send.buffer.bytes = 131072
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
-	ssl.endpoint.identification.algorithm = https
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLS
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-
-2020-02-20 16:58:59  [ main:604 ] - [ INFO ]  Kafka version: 2.3.0
-2020-02-20 16:58:59  [ main:605 ] - [ INFO ]  Kafka commitId: fc1aaa116b661c8a
-2020-02-20 16:58:59  [ main:605 ] - [ INFO ]  Kafka startTimeMs: 1582189139971
-2020-02-20 16:58:59  [ main:607 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] Creating restore consumer client
-2020-02-20 16:58:59  [ main:617 ] - [ INFO ]  ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.offset.reset = none
-	bootstrap.servers = [hdp-t4:9091]
-	check.crcs = true
-	client.dns.lookup = default
-	client.id = fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-restore-consumer
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = null
-	group.instance.id = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 1000
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	send.buffer.bytes = 131072
-	session.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
-	ssl.endpoint.identification.algorithm = https
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLS
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
-
-2020-02-20 16:59:00  [ main:652 ] - [ INFO ]  Kafka version: 2.3.0
-2020-02-20 16:59:00  [ main:652 ] - [ INFO ]  Kafka commitId: fc1aaa116b661c8a
-2020-02-20 16:59:00  [ main:652 ] - [ INFO ]  Kafka startTimeMs: 1582189140023
-2020-02-20 16:59:00  [ main:656 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] Creating shared producer client
-2020-02-20 16:59:00  [ main:663 ] - [ INFO ]  ProducerConfig values: 
-	acks = 1
-	batch.size = 16384
-	bootstrap.servers = [hdp-t4:9091]
-	buffer.memory = 33554432
-	client.dns.lookup = default
-	client.id = fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-producer
-	compression.type = none
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = false
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
-	linger.ms = 100
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	send.buffer.bytes = 131072
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
-	ssl.endpoint.identification.algorithm = https
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLS
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
-
-2020-02-20 16:59:00  [ main:689 ] - [ INFO ]  Kafka version: 2.3.0
-2020-02-20 16:59:00  [ main:689 ] - [ INFO ]  Kafka commitId: fc1aaa116b661c8a
-2020-02-20 16:59:00  [ main:689 ] - [ INFO ]  Kafka startTimeMs: 1582189140059
-2020-02-20 16:59:00  [ main:695 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] Creating consumer client
-2020-02-20 16:59:00  [ main:698 ] - [ INFO ]  ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.offset.reset = earliest
-	bootstrap.servers = [hdp-t4:9091]
-	check.crcs = true
-	client.dns.lookup = default
-	client.id = fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = fa_apply_info_ext
-	group.instance.id = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 1000
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	send.buffer.bytes = 131072
-	session.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
-	ssl.endpoint.identification.algorithm = https
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLS
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
-
-2020-02-20 16:59:00  [ main:718 ] - [ WARN ]  The configuration 'admin.retries' was supplied but isn't a known config.
-2020-02-20 16:59:00  [ main:718 ] - [ WARN ]  The configuration 'admin.retry.backoff.ms' was supplied but isn't a known config.
-2020-02-20 16:59:00  [ main:718 ] - [ INFO ]  Kafka version: 2.3.0
-2020-02-20 16:59:00  [ main:718 ] - [ INFO ]  Kafka commitId: fc1aaa116b661c8a
-2020-02-20 16:59:00  [ main:718 ] - [ INFO ]  Kafka startTimeMs: 1582189140089
-2020-02-20 16:59:00  [ main:724 ] - [ INFO ]  stream-client [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8] State transition from CREATED to REBALANCING
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:727 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] Starting
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:727 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] State transition from CREATED to STARTING
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:728 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Subscribed to pattern: 'yx_mysql_lloan'
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:907 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Discovered group coordinator hdp-t4:9091 (id: 2147483646 rack: null)
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:909 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Revoking previously assigned partitions []
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:910 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] State transition from STARTING to PARTITIONS_REVOKED
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:910 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:910 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] partition revocation took 0 ms.
-	suspended active tasks: []
-	suspended standby tasks: []
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:910 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] (Re-)joining group
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1459 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer] Assigned tasks to clients as {0e6dafec-5152-483a-98f8-e3427b1e98a8=[activeTasks: ([0_0]) standbyTasks: ([]) assignedTasks: ([0_0]) prevActiveTasks: ([]) prevStandbyTasks: ([]) prevAssignedTasks: ([]) capacity: 1]}.
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1500 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Successfully joined group with generation 1
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1503 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Setting newly assigned partitions: yx_mysql_lloan-0
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1503 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] State transition from PARTITIONS_REVOKED to PARTITIONS_ASSIGNED
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1517 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] partition assignment took 14 ms.
-	current active tasks: [0_0]
-	current standby tasks: []
-	previous active tasks: []
-
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1542 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1542 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1542 ] - [ INFO ]  stream-thread [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
-2020-02-20 16:59:00  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1543 ] - [ INFO ]  stream-client [fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8] State transition from REBALANCING to RUNNING
-2020-02-20 16:59:01  [ fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1:1727 ] - [ INFO ]  [Consumer clientId=fa_apply_info_ext-0e6dafec-5152-483a-98f8-e3427b1e98a8-StreamThread-1-consumer, groupId=fa_apply_info_ext] Setting offset for partition yx_mysql_lloan-0 to the committed offset FetchPosition{offset=18, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=hdp-t4:9091 (id: 1 rack: null), epoch=-1}}
-2020-02-20 17:00:57  [ main:0 ] - [ INFO ]  ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 1000
-	auto.offset.reset = earliest
-	bootstrap.servers = [192.168.145.132:9091]
-	check.crcs = true
-	client.dns.lookup = default
-	client.id = 
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = true
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = group-1
-	group.instance.id = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = true
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	send.buffer.bytes = 131072
-	session.timeout.ms = 30000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
-	ssl.endpoint.identification.algorithm = https
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLS
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-
-2020-02-20 17:00:57  [ main:631 ] - [ INFO ]  Kafka version: 2.3.0
-2020-02-20 17:00:57  [ main:631 ] - [ INFO ]  Kafka commitId: fc1aaa116b661c8a
-2020-02-20 17:00:57  [ main:633 ] - [ INFO ]  Kafka startTimeMs: 1582189257900
-2020-02-20 17:00:57  [ main:636 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Subscribed to topic(s): fa_apply_info_ext_hubg
-2020-02-20 17:00:58  [ main:993 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Discovered group coordinator hdp-t4:9091 (id: 2147483646 rack: null)
-2020-02-20 17:00:58  [ main:1008 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
-2020-02-20 17:00:58  [ main:1008 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
-2020-02-20 17:00:59  [ main:2059 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 22
-2020-02-20 17:00:59  [ main:2065 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions: fa_apply_info_ext_hubg-0
-2020-02-20 17:00:59  [ main:2115 ] - [ INFO ]  [Consumer clientId=consumer-1, groupId=group-1] Setting offset for partition fa_apply_info_ext_hubg-0 to the committed offset FetchPosition{offset=38, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=hdp-t4:9091 (id: 1 rack: null), epoch=-1}}
+2020-03-12 09:50:06  [ RepayDome-4cad1ff1-6d8c-4cb2-b0ff-f4e6e00892da-StreamThread-1:0 ] - [ ERROR ]  stream-thread [main] Unexpected error during topic creation for RepayDome-KSTREAM-AGGREGATE-STATE-STORE-0000000004-repartition.
+Error message was: org.apache.kafka.common.errors.UnsupportedVersionException: The broker does not support CREATE_TOPICS
+2020-03-12 09:50:06  [ RepayDome-4cad1ff1-6d8c-4cb2-b0ff-f4e6e00892da-StreamThread-1:7 ] - [ ERROR ]  stream-thread [RepayDome-4cad1ff1-6d8c-4cb2-b0ff-f4e6e00892da-StreamThread-1] Encountered the following unexpected Kafka exception during processing, this usually indicate Streams internal errors:
+org.apache.kafka.streams.errors.StreamsException: Could not create topic RepayDome-KSTREAM-AGGREGATE-STATE-STORE-0000000004-repartition.
+	at org.apache.kafka.streams.processor.internals.InternalTopicManager.makeReady(InternalTopicManager.java:148)
+	at org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor.prepareTopic(StreamsPartitionAssignor.java:971)
+	at org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor.assign(StreamsPartitionAssignor.java:528)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.performAssignment(ConsumerCoordinator.java:424)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.onJoinLeader(AbstractCoordinator.java:622)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.access$1100(AbstractCoordinator.java:107)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler.handle(AbstractCoordinator.java:544)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler.handle(AbstractCoordinator.java:527)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator$CoordinatorResponseHandler.onSuccess(AbstractCoordinator.java:978)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator$CoordinatorResponseHandler.onSuccess(AbstractCoordinator.java:958)
+	at org.apache.kafka.clients.consumer.internals.RequestFuture$1.onSuccess(RequestFuture.java:204)
+	at org.apache.kafka.clients.consumer.internals.RequestFuture.fireSuccess(RequestFuture.java:167)
+	at org.apache.kafka.clients.consumer.internals.RequestFuture.complete(RequestFuture.java:127)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler.fireCompletion(ConsumerNetworkClient.java:578)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.firePendingCompletedRequests(ConsumerNetworkClient.java:388)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:294)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:233)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:212)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.joinGroupIfNeeded(AbstractCoordinator.java:415)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureActiveGroup(AbstractCoordinator.java:358)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:353)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.updateAssignmentMetadataIfNeeded(KafkaConsumer.java:1251)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1216)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1201)
+	at org.apache.kafka.streams.processor.internals.StreamThread.pollRequests(StreamThread.java:941)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:846)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:805)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:774)
+Caused by: org.apache.kafka.common.errors.UnsupportedVersionException: The broker does not support CREATE_TOPICS
+2020-03-12 09:50:06  [ RepayDome-4cad1ff1-6d8c-4cb2-b0ff-f4e6e00892da-StreamThread-1:18 ] - [ ERROR ]  stream-client [RepayDome-4cad1ff1-6d8c-4cb2-b0ff-f4e6e00892da] All stream threads have died. The instance will be in error state and should be closed.
+2020-03-12 09:51:03  [ RepayDome-08f25ec9-ab95-4394-8118-82a1424f172c-StreamThread-1:0 ] - [ ERROR ]  stream-thread [main] Unexpected error during topic creation for RepayDome-KSTREAM-AGGREGATE-STATE-STORE-0000000004-changelog.
+Error message was: org.apache.kafka.common.errors.UnsupportedVersionException: The broker does not support CREATE_TOPICS
+2020-03-12 09:51:03  [ RepayDome-08f25ec9-ab95-4394-8118-82a1424f172c-StreamThread-1:4 ] - [ ERROR ]  stream-thread [RepayDome-08f25ec9-ab95-4394-8118-82a1424f172c-StreamThread-1] Encountered the following unexpected Kafka exception during processing, this usually indicate Streams internal errors:
+org.apache.kafka.streams.errors.StreamsException: Could not create topic RepayDome-KSTREAM-AGGREGATE-STATE-STORE-0000000004-changelog.
+	at org.apache.kafka.streams.processor.internals.InternalTopicManager.makeReady(InternalTopicManager.java:148)
+	at org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor.prepareTopic(StreamsPartitionAssignor.java:971)
+	at org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor.assign(StreamsPartitionAssignor.java:618)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.performAssignment(ConsumerCoordinator.java:424)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.onJoinLeader(AbstractCoordinator.java:622)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.access$1100(AbstractCoordinator.java:107)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler.handle(AbstractCoordinator.java:544)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler.handle(AbstractCoordinator.java:527)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator$CoordinatorResponseHandler.onSuccess(AbstractCoordinator.java:978)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator$CoordinatorResponseHandler.onSuccess(AbstractCoordinator.java:958)
+	at org.apache.kafka.clients.consumer.internals.RequestFuture$1.onSuccess(RequestFuture.java:204)
+	at org.apache.kafka.clients.consumer.internals.RequestFuture.fireSuccess(RequestFuture.java:167)
+	at org.apache.kafka.clients.consumer.internals.RequestFuture.complete(RequestFuture.java:127)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler.fireCompletion(ConsumerNetworkClient.java:578)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.firePendingCompletedRequests(ConsumerNetworkClient.java:388)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:294)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:233)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:212)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.joinGroupIfNeeded(AbstractCoordinator.java:415)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureActiveGroup(AbstractCoordinator.java:358)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:353)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.updateAssignmentMetadataIfNeeded(KafkaConsumer.java:1251)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1216)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1201)
+	at org.apache.kafka.streams.processor.internals.StreamThread.pollRequests(StreamThread.java:941)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:846)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:805)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:774)
+Caused by: org.apache.kafka.common.errors.UnsupportedVersionException: The broker does not support CREATE_TOPICS
+2020-03-12 09:51:03  [ RepayDome-08f25ec9-ab95-4394-8118-82a1424f172c-StreamThread-1:12 ] - [ ERROR ]  stream-client [RepayDome-08f25ec9-ab95-4394-8118-82a1424f172c] All stream threads have died. The instance will be in error state and should be closed.
+2020-03-12 09:52:36  [ RepayDome-e1c8b445-b58e-4c7a-9db1-2c592447f724-StreamThread-1:0 ] - [ ERROR ]  stream-thread [RepayDome-e1c8b445-b58e-4c7a-9db1-2c592447f724-StreamThread-1] Failed to process stream task 0_0 due to the following error:
+com.alibaba.fastjson.JSONException: parseLong error, field : id
+	at com.alibaba.fastjson.serializer.LongCodec.deserialze(LongCodec.java:82)
+	at com.alibaba.fastjson.parser.deserializer.DefaultFieldDeserializer.parseField(DefaultFieldDeserializer.java:80)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.parseField(JavaBeanDeserializer.java:1026)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:723)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.parseRest(JavaBeanDeserializer.java:1199)
+	at com.alibaba.fastjson.parser.deserializer.FastjsonASMDeserializer_1_RepayPlanCustSource.deserialze(Unknown Source)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:268)
+	at com.alibaba.fastjson.parser.deserializer.ArrayListTypeFieldDeserializer.parseArray(ArrayListTypeFieldDeserializer.java:162)
+	at com.alibaba.fastjson.parser.deserializer.ArrayListTypeFieldDeserializer.parseField(ArrayListTypeFieldDeserializer.java:65)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:695)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:272)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:268)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseObject(DefaultJSONParser.java:614)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:361)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:329)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:243)
+	at com.yixin.hubg.RepayDome.lambda$createWordCountStream$0(RepayDome.java:41)
+	at org.apache.kafka.streams.kstream.internals.KStreamMap$KStreamMapProcessor.process(KStreamMap.java:41)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.process(ProcessorNode.java:117)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:201)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:180)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:133)
+	at org.apache.kafka.streams.processor.internals.SourceNode.process(SourceNode.java:87)
+	at org.apache.kafka.streams.processor.internals.StreamTask.process(StreamTask.java:366)
+	at org.apache.kafka.streams.processor.internals.AssignedStreamsTasks.process(AssignedStreamsTasks.java:199)
+	at org.apache.kafka.streams.processor.internals.TaskManager.process(TaskManager.java:420)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:890)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:805)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:774)
+Caused by: com.alibaba.fastjson.JSONException: can not cast to long, value : 402880f55c32f845015c330bc9860bd0
+	at com.alibaba.fastjson.util.TypeUtils.castToLong(TypeUtils.java:574)
+	at com.alibaba.fastjson.serializer.LongCodec.deserialze(LongCodec.java:75)
+	... 28 more
+2020-03-12 09:52:36  [ RepayDome-e1c8b445-b58e-4c7a-9db1-2c592447f724-StreamThread-1:4 ] - [ ERROR ]  stream-thread [RepayDome-e1c8b445-b58e-4c7a-9db1-2c592447f724-StreamThread-1] Encountered the following error during processing:
+com.alibaba.fastjson.JSONException: parseLong error, field : id
+	at com.alibaba.fastjson.serializer.LongCodec.deserialze(LongCodec.java:82)
+	at com.alibaba.fastjson.parser.deserializer.DefaultFieldDeserializer.parseField(DefaultFieldDeserializer.java:80)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.parseField(JavaBeanDeserializer.java:1026)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:723)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.parseRest(JavaBeanDeserializer.java:1199)
+	at com.alibaba.fastjson.parser.deserializer.FastjsonASMDeserializer_1_RepayPlanCustSource.deserialze(Unknown Source)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:268)
+	at com.alibaba.fastjson.parser.deserializer.ArrayListTypeFieldDeserializer.parseArray(ArrayListTypeFieldDeserializer.java:162)
+	at com.alibaba.fastjson.parser.deserializer.ArrayListTypeFieldDeserializer.parseField(ArrayListTypeFieldDeserializer.java:65)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:695)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:272)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:268)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseObject(DefaultJSONParser.java:614)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:361)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:329)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:243)
+	at com.yixin.hubg.RepayDome.lambda$createWordCountStream$0(RepayDome.java:41)
+	at org.apache.kafka.streams.kstream.internals.KStreamMap$KStreamMapProcessor.process(KStreamMap.java:41)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.process(ProcessorNode.java:117)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:201)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:180)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:133)
+	at org.apache.kafka.streams.processor.internals.SourceNode.process(SourceNode.java:87)
+	at org.apache.kafka.streams.processor.internals.StreamTask.process(StreamTask.java:366)
+	at org.apache.kafka.streams.processor.internals.AssignedStreamsTasks.process(AssignedStreamsTasks.java:199)
+	at org.apache.kafka.streams.processor.internals.TaskManager.process(TaskManager.java:420)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:890)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:805)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:774)
+Caused by: com.alibaba.fastjson.JSONException: can not cast to long, value : 402880f55c32f845015c330bc9860bd0
+	at com.alibaba.fastjson.util.TypeUtils.castToLong(TypeUtils.java:574)
+	at com.alibaba.fastjson.serializer.LongCodec.deserialze(LongCodec.java:75)
+	... 28 more
+2020-03-12 09:52:36  [ RepayDome-e1c8b445-b58e-4c7a-9db1-2c592447f724-StreamThread-1:19 ] - [ ERROR ]  stream-client [RepayDome-e1c8b445-b58e-4c7a-9db1-2c592447f724] All stream threads have died. The instance will be in error state and should be closed.
+2020-03-12 09:59:48  [ RepayDome-c993c5c2-5d24-4e06-9ebf-06508a4676db-StreamThread-1:0 ] - [ ERROR ]  stream-thread [RepayDome-c993c5c2-5d24-4e06-9ebf-06508a4676db-StreamThread-1] Failed to process stream task 1_0 due to the following error:
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1967)
+	at com.yixin.hubg.RepayDome.getTempFromSource(RepayDome.java:113)
+	at com.yixin.hubg.RepayDome.access$000(RepayDome.java:22)
+	at com.yixin.hubg.RepayDome$2.apply(RepayDome.java:78)
+	at com.yixin.hubg.RepayDome$2.apply(RepayDome.java:69)
+	at org.apache.kafka.streams.kstream.internals.KStreamAggregate$KStreamAggregateProcessor.process(KStreamAggregate.java:101)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.process(ProcessorNode.java:117)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:201)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:180)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:133)
+	at org.apache.kafka.streams.processor.internals.SourceNode.process(SourceNode.java:87)
+	at org.apache.kafka.streams.processor.internals.StreamTask.process(StreamTask.java:366)
+	at org.apache.kafka.streams.processor.internals.AssignedStreamsTasks.process(AssignedStreamsTasks.java:199)
+	at org.apache.kafka.streams.processor.internals.TaskManager.process(TaskManager.java:420)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:890)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:805)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:774)
+2020-03-12 09:59:48  [ RepayDome-c993c5c2-5d24-4e06-9ebf-06508a4676db-StreamThread-1:6 ] - [ ERROR ]  stream-thread [RepayDome-c993c5c2-5d24-4e06-9ebf-06508a4676db-StreamThread-1] Encountered the following error during processing:
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1967)
+	at com.yixin.hubg.RepayDome.getTempFromSource(RepayDome.java:113)
+	at com.yixin.hubg.RepayDome.access$000(RepayDome.java:22)
+	at com.yixin.hubg.RepayDome$2.apply(RepayDome.java:78)
+	at com.yixin.hubg.RepayDome$2.apply(RepayDome.java:69)
+	at org.apache.kafka.streams.kstream.internals.KStreamAggregate$KStreamAggregateProcessor.process(KStreamAggregate.java:101)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.process(ProcessorNode.java:117)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:201)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:180)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:133)
+	at org.apache.kafka.streams.processor.internals.SourceNode.process(SourceNode.java:87)
+	at org.apache.kafka.streams.processor.internals.StreamTask.process(StreamTask.java:366)
+	at org.apache.kafka.streams.processor.internals.AssignedStreamsTasks.process(AssignedStreamsTasks.java:199)
+	at org.apache.kafka.streams.processor.internals.TaskManager.process(TaskManager.java:420)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:890)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:805)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:774)
+2020-03-12 09:59:48  [ RepayDome-c993c5c2-5d24-4e06-9ebf-06508a4676db-StreamThread-1:27 ] - [ ERROR ]  stream-client [RepayDome-c993c5c2-5d24-4e06-9ebf-06508a4676db] All stream threads have died. The instance will be in error state and should be closed.
+2020-03-12 10:03:11  [ RepayDome-3a418dce-d68a-4248-a7c8-200803e5ec4f-StreamThread-1:0 ] - [ ERROR ]  stream-thread [RepayDome-3a418dce-d68a-4248-a7c8-200803e5ec4f-StreamThread-1] Failed to process stream task 1_0 due to the following error:
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1967)
+	at com.yixin.hubg.RepayDome.getTempFromSource(RepayDome.java:113)
+	at com.yixin.hubg.RepayDome.access$000(RepayDome.java:22)
+	at com.yixin.hubg.RepayDome$2.apply(RepayDome.java:78)
+	at com.yixin.hubg.RepayDome$2.apply(RepayDome.java:69)
+	at org.apache.kafka.streams.kstream.internals.KStreamAggregate$KStreamAggregateProcessor.process(KStreamAggregate.java:101)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.process(ProcessorNode.java:117)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:201)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:180)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:133)
+	at org.apache.kafka.streams.processor.internals.SourceNode.process(SourceNode.java:87)
+	at org.apache.kafka.streams.processor.internals.StreamTask.process(StreamTask.java:366)
+	at org.apache.kafka.streams.processor.internals.AssignedStreamsTasks.process(AssignedStreamsTasks.java:199)
+	at org.apache.kafka.streams.processor.internals.TaskManager.process(TaskManager.java:420)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:890)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:805)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:774)
+2020-03-12 10:03:11  [ RepayDome-3a418dce-d68a-4248-a7c8-200803e5ec4f-StreamThread-1:3 ] - [ ERROR ]  stream-thread [RepayDome-3a418dce-d68a-4248-a7c8-200803e5ec4f-StreamThread-1] Encountered the following error during processing:
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1967)
+	at com.yixin.hubg.RepayDome.getTempFromSource(RepayDome.java:113)
+	at com.yixin.hubg.RepayDome.access$000(RepayDome.java:22)
+	at com.yixin.hubg.RepayDome$2.apply(RepayDome.java:78)
+	at com.yixin.hubg.RepayDome$2.apply(RepayDome.java:69)
+	at org.apache.kafka.streams.kstream.internals.KStreamAggregate$KStreamAggregateProcessor.process(KStreamAggregate.java:101)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.process(ProcessorNode.java:117)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:201)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:180)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:133)
+	at org.apache.kafka.streams.processor.internals.SourceNode.process(SourceNode.java:87)
+	at org.apache.kafka.streams.processor.internals.StreamTask.process(StreamTask.java:366)
+	at org.apache.kafka.streams.processor.internals.AssignedStreamsTasks.process(AssignedStreamsTasks.java:199)
+	at org.apache.kafka.streams.processor.internals.TaskManager.process(TaskManager.java:420)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:890)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:805)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:774)
+2020-03-12 10:03:11  [ RepayDome-3a418dce-d68a-4248-a7c8-200803e5ec4f-StreamThread-1:43 ] - [ ERROR ]  stream-client [RepayDome-3a418dce-d68a-4248-a7c8-200803e5ec4f] All stream threads have died. The instance will be in error state and should be closed.
+2020-03-12 11:21:28  [ RepayDome-8554260b-68fa-44ef-bdf4-4204274dea6c-CleanupThread:0 ] - [ ERROR ]  stream-thread [RepayDome-8554260b-68fa-44ef-bdf4-4204274dea6c-CleanupThread] Failed to delete the state directory.
+java.nio.file.DirectoryNotEmptyException: \tmp\kafka-streams\RepayDome\0_0
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:266)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at org.apache.kafka.common.utils.Utils$2.postVisitDirectory(Utils.java:769)
+	at org.apache.kafka.common.utils.Utils$2.postVisitDirectory(Utils.java:752)
+	at java.nio.file.Files.walkFileTree(Files.java:2688)
+	at java.nio.file.Files.walkFileTree(Files.java:2742)
+	at org.apache.kafka.common.utils.Utils.delete(Utils.java:752)
+	at org.apache.kafka.streams.processor.internals.StateDirectory.cleanRemovedTasks(StateDirectory.java:301)
+	at org.apache.kafka.streams.processor.internals.StateDirectory.cleanRemovedTasks(StateDirectory.java:264)
+	at org.apache.kafka.streams.KafkaStreams.lambda$start$1(KafkaStreams.java:802)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-12 11:41:28  [ RepayDome-8554260b-68fa-44ef-bdf4-4204274dea6c-CleanupThread:1199989 ] - [ ERROR ]  stream-thread [RepayDome-8554260b-68fa-44ef-bdf4-4204274dea6c-CleanupThread] Failed to delete the state directory.
+java.nio.file.DirectoryNotEmptyException: \tmp\kafka-streams\RepayDome\0_0
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:266)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at org.apache.kafka.common.utils.Utils$2.postVisitDirectory(Utils.java:769)
+	at org.apache.kafka.common.utils.Utils$2.postVisitDirectory(Utils.java:752)
+	at java.nio.file.Files.walkFileTree(Files.java:2688)
+	at java.nio.file.Files.walkFileTree(Files.java:2742)
+	at org.apache.kafka.common.utils.Utils.delete(Utils.java:752)
+	at org.apache.kafka.streams.processor.internals.StateDirectory.cleanRemovedTasks(StateDirectory.java:301)
+	at org.apache.kafka.streams.processor.internals.StateDirectory.cleanRemovedTasks(StateDirectory.java:264)
+	at org.apache.kafka.streams.KafkaStreams.lambda$start$1(KafkaStreams.java:802)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-12 12:59:57  [ RepayDome-1e741f8d-4af4-490b-a1ef-607138f32d5e-StreamThread-1:0 ] - [ ERROR ]  [Consumer clientId=RepayDome-1e741f8d-4af4-490b-a1ef-607138f32d5e-StreamThread-1-consumer, groupId=RepayDome] Offset commit failed on partition lloantest1-0 at offset 26: Specified group generation id is not valid.
+2020-03-12 14:03:05  [ RepayDome-10c573a7-d0e3-46d7-95e0-9b79d467200b-CleanupThread:0 ] - [ ERROR ]  stream-thread [RepayDome-10c573a7-d0e3-46d7-95e0-9b79d467200b-CleanupThread] Failed to delete the state directory.
+java.nio.file.DirectoryNotEmptyException: \tmp\kafka-streams\RepayDome\0_0
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:266)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at org.apache.kafka.common.utils.Utils$2.postVisitDirectory(Utils.java:769)
+	at org.apache.kafka.common.utils.Utils$2.postVisitDirectory(Utils.java:752)
+	at java.nio.file.Files.walkFileTree(Files.java:2688)
+	at java.nio.file.Files.walkFileTree(Files.java:2742)
+	at org.apache.kafka.common.utils.Utils.delete(Utils.java:752)
+	at org.apache.kafka.streams.processor.internals.StateDirectory.cleanRemovedTasks(StateDirectory.java:301)
+	at org.apache.kafka.streams.processor.internals.StateDirectory.cleanRemovedTasks(StateDirectory.java:264)
+	at org.apache.kafka.streams.KafkaStreams.lambda$start$1(KafkaStreams.java:802)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

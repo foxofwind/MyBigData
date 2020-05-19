@@ -25,4 +25,5 @@ public class RepayPlanCustTemp {
     private Integer is_alrepaid;
     private Integer is_overdue_cur;
     private String IS_DELETED;
+    private Long ts;
 }

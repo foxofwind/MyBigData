@@ -6,7 +6,7 @@ import lombok.Data;
  * Create By 鸣宇淳 on 2020/2/10
  **/
 @Data
-public class FaApplyInfoExtSource {
+public class FaApplyInfoExtSource extends KafkaEntiesBase{
     private String dbDMLType;//操作类型
     private String ID;
     private String BZ_ID;
